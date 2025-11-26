@@ -1,0 +1,8 @@
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run daily at 6:00 UTC for regular activity
+    - cron: '0 6 * * *'
